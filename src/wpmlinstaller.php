@@ -123,7 +123,7 @@ class wpmlinstaller implements PluginInterface, EventSubscriberInterface
         }
 
         $wpml_sub_key = trim($this->getParameter('WPML_SUBSCRIPTION_KEY'));
-        if (preg_match("/^[a-f0-9]{32}$/", $wpml_sub_key) !== 1) {
+        if (strlen($wpml_sub_key) !== 32) {
             throw new faultykeyexception('WPML_SUBSCRIPTION_KEY');
         }
 

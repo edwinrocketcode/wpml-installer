@@ -1,7 +1,7 @@
 {
   "name": "edwinrocketcode/wpml-installer",
   "description": "A composer plugin to make installing wpml.org plugins with composer easy. Your subscription info will be read from environment variables, will only be transmitted to WPML and will not be displayed in composer.lock.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "composer-plugin",
   "keywords": [
     "wpml", "wordpress", "multilingual", "wp", "composer"
@@ -36,7 +36,7 @@
     "class": "lucguerraz\\wpmlinstaller\\wpmlinstaller",
     "plugin-modifies-downloads": true
   },
-  "provides": {
-    "lucguerraz/wpml-installer": "*"
+  "replace": {
+    "lucguerraz/wpml-installer": "self.version" 
   }
 }

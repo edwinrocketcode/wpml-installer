@@ -35,5 +35,8 @@
   "extra": {
     "class": "lucguerraz\\wpmlinstaller\\wpmlinstaller",
     "plugin-modifies-downloads": true
+  },
+  "provides": {
+    "lucguerraz/wpml-installer": "*"
   }
 }
